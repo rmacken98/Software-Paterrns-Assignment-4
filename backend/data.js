@@ -1,4 +1,4 @@
-module.exports={
+export default{
     products: [
     {    _id:'1',
         name:'Jbl Speaker',
@@ -46,7 +46,7 @@ rating:4.5,
 numReviews:10,
 countInStock: 6},
 {    _id:'6',
-name:'ASS Speaker',
+name:'S Speaker',
 category: 'Speakers',
 image: '/images/product-1.jpg',
 price: 70,
