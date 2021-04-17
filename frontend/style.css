@@ -27,6 +27,22 @@ a:hover{
     grid-template-rows: 5rem 1fr 5rem;
     height: 100%;
 }
+button{
+    font: 1.6rem helvetica;
+    padding: 1rem;
+    border: 0.1rem #808080 solid;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+button.primary{
+    background-color: #f08040;
+}
+.fw{
+    width:100%
+}
+button:hover{
+    border:0.1rem #440044 solid;
+}
 header{
     grid-area: header;
     background-color: #203040;
@@ -95,3 +111,40 @@ header a:hover{
     font-size: 2rem;
 }
 
+.details{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.details-image{
+    flex: 2 1 60rem;
+
+}
+.details-image img{
+    max-width: 60rem;
+    width: 100%;
+}
+.details-info,
+.details-action{
+    float: 1 1 30rem;
+}
+.details-info ul,
+.details-action ul{
+    padding: 0;
+    list-style-type: none;
+}
+.details-info h1{
+    font-size: 2 rem;
+    margin: 0;
+}
+.details-info li,
+.details-action li{
+    margin-bottom: 1rem;
+}
+.details-action{
+    border:0.1rem #808080;
+    border-radius:0.5rem;
+    background-color: #f8f8f8f8;
+    padding: 1rem;
+}
