@@ -3,14 +3,12 @@ import { getProduct } from "../api";
 import { parseRequestUrl } from "../utils";
 
 const ProductScreen = {
-    after_render : ()=>{
-        const request= parseRequestUrl();
-        document.getElementById("add-button").addEventListener('click',
-        () => {
-            document.location.hash= `/cart/${request.id}`
-        }
-        )
-    },
+    after_render: () => {
+        const request = parseRequestUrl();
+        document.getElementById('add-button').addEventListener('click', () => {
+          document.location.hash = `/cart/${request.id}`;
+        });
+      },
     render: async () => {
         const request = parseRequestUrl();
         const product = await getProduct(request.id);
